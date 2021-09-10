@@ -2,8 +2,13 @@
     <string name="app_name">FitnessTracker</string>
     <string name="imc_textStr">IMC</string>
     <string name="imc_calculate_txtStr">IMC Calculate</string>
-    <string name="etxt_type_your_heightStr">Type your Height! (Mts)</string>
+    <string name="etxt_type_your_heightStr">Type your Height! (Cm)</string>
     <string name="etxt_type_your_weightStr">Type your Weight! (Kg)</string>
     <string name="btn_txt_calculate_imcStr">Calculate</string>
     <string name="imc_calculate_description">Icon of IMC Calculate</string>
+
+    <string name="imc_abaixo_do_peso">Abaixo do peso</string>
+    <string name="imc_peso_controlado">Peso controlado</string>
+    <string name="imc_acima_do_peso">Acima do peso</string>
+
 </resources>

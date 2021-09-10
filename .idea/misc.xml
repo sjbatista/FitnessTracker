@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/drawable/bg_button_imc.xml" value="0.2203125" />
+        <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
         <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/drawable/vintage_flower_icon_160dp.xml" value="0.2203125" />
         <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/drawable/vintage_flower_icon_24dp.xml" value="0.2203125" />
         <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/layout/activity_imc.xml" value="0.22" />
