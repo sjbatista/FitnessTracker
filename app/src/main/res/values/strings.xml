@@ -10,5 +10,6 @@
     <string name="imc_abaixo_do_peso">Abaixo do peso</string>
     <string name="imc_peso_controlado">Peso controlado</string>
     <string name="imc_acima_do_peso">Acima do peso</string>
+    <string name="imc_responseStr">Your Imc is: %1$.2f</string>
 
 </resources>

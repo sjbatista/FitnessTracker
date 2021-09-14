@@ -1,5 +1,6 @@
 package co.tiagoaguiar.codelab.fitnesstracker;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.StringRes;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ImcActivity extends AppCompatActivity {
@@ -30,6 +32,7 @@ public class ImcActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (!validate()) {
                     Toast.makeText(ImcActivity.this, "Invalid values !", Toast.LENGTH_LONG).show();
+                    return;
                 } else {
                     int height = Integer.parseInt(etxtHeight.getText().toString());
                     int weight = Integer.parseInt(etxtWeight.getText().toString());
@@ -38,7 +41,18 @@ public class ImcActivity extends AppCompatActivity {
 
                     int idImcResponse = imcResponse(result);
 
-                    Toast.makeText(ImcActivity.this, idImcResponse, Toast.LENGTH_LONG).show();
+                    AlertDialog dialog = new AlertDialog.Builder(ImcActivity.this)
+                            .setTitle(getString(R.string.imc_responseStr,result))
+                            .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+
+                                }
+                            })
+                            .create();
+                    dialog.setIcon(R.drawable.vintage_flower_icon_24dp);
+                    dialog.setMessage(getString(idImcResponse));
+                    dialog.show();
                 }
             }
         });
