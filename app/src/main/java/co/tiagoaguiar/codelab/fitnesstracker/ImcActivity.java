@@ -2,6 +2,7 @@ package co.tiagoaguiar.codelab.fitnesstracker;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -81,6 +82,7 @@ public class ImcActivity extends AppCompatActivity {
         }
     }
 
+    @android.support.annotation.RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     private boolean validate() {
         return (!etxtHeight.getText().toString().startsWith("0")
                 && !etxtWeight.getText().toString().startsWith("0")
