@@ -3,12 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/drawable/abc_icon_24.xml" value="0.20185185185185187" />
         <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/drawable/bg_button_imc.xml" value="0.2203125" />
+        <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/drawable/ghi_icon_24.xml" value="0.20185185185185187" />
         <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
+        <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/drawable/tmb_icon_24.xml" value="0.2074074074074074" />
         <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/drawable/vintage_flower_icon_160dp.xml" value="0.2203125" />
         <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/drawable/vintage_flower_icon_24dp.xml" value="0.2203125" />
         <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/layout/activity_imc.xml" value="0.22" />
-        <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/layout/activity_tmb.xml" value="0.20416666666666666" />
+        <entry key="..\:/CourseProjects Java Full/FitnessTracker/app/src/main/res/layout/main_item.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

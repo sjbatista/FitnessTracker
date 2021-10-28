@@ -11,5 +11,11 @@
     <string name="imc_peso_controlado">Peso controlado</string>
     <string name="imc_acima_do_peso">Acima do peso</string>
     <string name="imc_responseStr">Your Imc is: %1$.2f</string>
+    <string name="tmb_textStr">TMB</string>
+    <string name="abc_textStr">ABC</string>
+    <string name="def_textStr">DEF</string>
+    <string name="ghi_textStr">GHI</string>
+    <string name="mno_textStr">MNO</string>
+    <string name="jkl_textStr">JKL</string>
 
 </resources>
