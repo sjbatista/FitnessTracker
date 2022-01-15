@@ -1,11 +1,15 @@
 package co.tiagoaguiar.codelab.fitnesstracker;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -44,8 +48,18 @@ public class ImcActivity extends AppCompatActivity {
 
                 AlertDialog dialog = new AlertDialog.Builder(ImcActivity.this) //nosso pop-up
                         .setTitle(getString(R.string.imc_responseStr, result))
-                        .setPositiveButton(android.R.string.ok, (dialog1, which) -> {
-
+                        .setPositiveButton(android.R.string.ok, ((dialog1, which) -> {
+                        }))
+                        .setNegativeButton(R.string.salvar,(dialog1, which) ->{
+                         new Thread(() -> {
+                                 long calcId = SqlHelper.getInstance(ImcActivity.this).addItem("imc",result);
+                             runOnUiThread(() -> {
+                             if(calcId>0){
+                                 Toast.makeText(ImcActivity.this,R.string.salvo,Toast.LENGTH_LONG).show();
+                                 openListCalcActivity("imc");
+                             }
+                             });
+                         }).start();
                         })
                         .create(); //Aqui acaba a criação do pop-up.
                 //Outras alterações no pop-up já criado.
@@ -54,6 +68,27 @@ public class ImcActivity extends AppCompatActivity {
                 dialog.show();
             }
         });//fim da função do botão...
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==R.id.menu_list){
+            openListCalcActivity("imc");
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void openListCalcActivity(String type){
+        Intent intent = new Intent(ImcActivity.this, ListCalcActivity.class);
+        intent.putExtra("type", type);
+        startActivity(intent);
     }
 
     @StringRes

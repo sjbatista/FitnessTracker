@@ -4,18 +4,28 @@
     <string name="imc_calculate_txtStr">IMC Calculate</string>
     <string name="etxt_type_your_heightStr">Type your Height! (Cm)</string>
     <string name="etxt_type_your_weightStr">Type your Weight! (Kg)</string>
-    <string name="btn_txt_calculate_imcStr">Calculate</string>
+    <string name="btn_txt_calculateStr">Calculate</string>
     <string name="imc_calculate_description">Icon of IMC Calculate</string>
 
     <string name="imc_abaixo_do_peso">Abaixo do peso</string>
     <string name="imc_peso_controlado">Peso controlado</string>
     <string name="imc_acima_do_peso">Acima do peso</string>
+
     <string name="imc_responseStr">Your Imc is: %1$.2f</string>
+    <string name="tmb_responseStr">Your Tmb is: %1$.3f</string>
+    <string name="list_responseStr">Resultado: %1$.2f Data: %2$s</string>
+
     <string name="tmb_textStr">TMB</string>
     <string name="abc_textStr">ABC</string>
     <string name="def_textStr">DEF</string>
     <string name="ghi_textStr">GHI</string>
     <string name="mno_textStr">MNO</string>
     <string name="jkl_textStr">JKL</string>
-
+    <string name="salvar">Salvar</string>
+    <string name="salvo">Salvo com sucesso!</string>
+    <string name="search">Buscar</string>
+    <string name="tmb_calculate_txtStr">TMB Calculate</string>
+    <string name="tmb_description">Taxa metabólica basal é um método matemático, não exato, de calcular a quantidade calórica que o corpo necessita, em vinte e quatro horas, para manter-se nutrido durante o decorrer das atividades diárias</string>
+    <string name="imc_description">IMC significa Índice de Massa Corporal e é um parâmetro utilizado para saber se o peso está de acordo com a altura, o que pode interferir diretamente na saúde e qualidade de vida da pessoa</string>
+    <string name="tmb_ageStr">Type your age!</string>
 </resources>

@@ -15,6 +15,13 @@
         android:gravity="center"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:text="@string/imc_description" />
+
         <ImageView
             style="@style/title_text_style"
             android:contentDescription="@string/imc_calculate_description"
@@ -27,21 +34,21 @@
 
         <EditText
             android:id="@+id/etxt_height"
-            style="@style/edit_text_imc_input_style"
+            style="@style/edit_text_input_style"
             android:layout_marginTop="30sp"
             android:hint="@string/etxt_type_your_heightStr" />
 
         <EditText
             android:id="@+id/etxt_weight"
-            style="@style/edit_text_imc_input_style"
+            style="@style/edit_text_input_style"
             android:hint="@string/etxt_type_your_weightStr"
             android:maxLength="5" />
 
         <Button
             android:id="@+id/btn_calculate_imc"
-            style="@style/button_style"
+            style="@style/imc_button_style"
             android:layout_marginTop="40sp"
-            android:text="@string/btn_txt_calculate_imcStr"
+            android:text="@string/btn_txt_calculateStr"
             tools:targetApi="lollipop" />
 
     </LinearLayout>

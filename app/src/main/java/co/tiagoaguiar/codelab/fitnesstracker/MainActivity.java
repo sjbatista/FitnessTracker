@@ -28,21 +28,18 @@ public class MainActivity extends AppCompatActivity {
         List<MainItem> mainItems = new ArrayList<>();
         mainItems.add(new MainItem(1, android.R.color.darker_gray, R.drawable.vintage_flower_icon_24dp, R.string.imc_textStr));
         mainItems.add(new MainItem(2, android.R.color.darker_gray, R.drawable.tmb_icon_24, R.string.tmb_textStr));
-        mainItems.add(new MainItem(3, android.R.color.darker_gray, R.drawable.abc_icon_24, R.string.abc_textStr));
-        mainItems.add(new MainItem(4, android.R.color.darker_gray, R.drawable.def_icon_24, R.string.def_textStr));
-        mainItems.add(new MainItem(5, android.R.color.darker_gray, R.drawable.ghi_icon_24, R.string.ghi_textStr));
-        mainItems.add(new MainItem(6, android.R.color.darker_gray, R.drawable.jkl_icon_24, R.string.jkl_textStr));
-        mainItems.add(new MainItem(7, android.R.color.darker_gray, R.drawable.mno_icon_24, R.string.mno_textStr));
 
         rvMain = findViewById(R.id.main_rv);
         rvMain.setLayoutManager(new GridLayoutManager(this, 2));
         MainAdapter adapter = new MainAdapter(mainItems);
         adapter.setListener(id -> {
-            switch (id){
+            switch (id) {
                 case 1:
-                    startActivity(new Intent(MainActivity.this,ImcActivity.class));
+                    startActivity(new Intent(MainActivity.this, ImcActivity.class));
+                    break;
                 case 2:
-                    startActivity(new Intent(MainActivity.this,TmbActivity.class));
+                    startActivity(new Intent(MainActivity.this, TmbActivity.class));
+                    break;
             }
 
         });
@@ -94,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 LinearLayout container = itemView.findViewById(R.id.linear_layout_btn_imc);
 
                 container.setOnClickListener(view -> {
-                    listener.onClick(view.getId());
+                    listener.onClick(item.getId());
                 });
 
                 txtItemTitle.setText(item.getTitleId());
@@ -104,8 +101,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
-
 
 
 }
